@@ -1,0 +1,239 @@
+.full_area {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0px 30px;
+    border-radius: 10px;
+}
+
+.full_area p{
+    font-size: 20px;
+}
+
+#about_welcome {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.about_area {
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Who {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+    .Who h2 {
+        font-size: 30px;
+        color: #0056b3;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #0056b3;
+        padding-bottom: 5px;
+    }
+
+.Services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #0056b3;
+    text-transform: uppercase;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    column-gap: 30px;
+}
+
+.categories_box {
+    width: 48%;
+    padding: 20px;
+    background-color: #6495ED;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+    .categories_box:hover {
+        transform: scale(1.05);
+    }
+
+    .categories_box h4 {
+        font-size: 24px;
+        margin: 20px 0;
+        color: #333;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+.horizontal_layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sub_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sub_category {
+    flex: 1;
+    max-width: 30%;
+    padding: 15px;
+    border: 1px solid #0056b3;
+    border-radius: 8px;
+    background-color: #ffffff;
+    text-align: center;
+    transition: box-shadow 0.3s;
+    height: 350px;
+}
+
+    .sub_category:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .sub_category img {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .sub_category p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #555;
+        text-align: justify;
+        margin-top: 10px;
+    }
+
+.go-now:hover {
+    background-color: #004494;
+}
+
+.Team h2 {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #0056b3;
+    text-transform: uppercase;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 1px;
+    margin-right: 95px;
+}
+
+.admin-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 5px solid #0056b3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.T_M_A h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.team_members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.team_box_area {
+    position: relative;
+    width: 250px;
+    text-align: center;
+}
+
+.team_box {
+    display: block;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.team_box_name {
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #0056b3;
+}
+
+.vision-section, .join-us-section {
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+    .vision-section h2, .join-us-section h2 {
+        font-size: 24px;
+        color: #0056b3;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .vision-section p, .join-us-section p {
+        text-align: justify;
+        color: #555;
+        font-size: 16px;
+    }
+
+.go_for_Register, .go_for_Register a {
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 12px;
+    font-size: 100%;
+    text-align: right;
+    background-color: transparent;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+    .go_for_Register a {
+        border: 1px thick;
+        background-color: #2e86c1;
+        border-radius: 10px;
+        color: #ecf0f1;
+    }
+
+.go_for_Register a:hover {
+    background-color: #2874a6;
+}
+
+.go_now{
+    text-decoration: none;
+    color: black;
+}

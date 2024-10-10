@@ -1,0 +1,404 @@
+/* Company profile section container */
+.company-profile-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 40px;
+    background-color: #f5f7fa;
+    margin: 0px 30px;
+    border-radius: 10px;
+}
+
+/* Left and Right Side Styles */
+.left-side, .right-side {
+    width: 48%;
+}
+
+/* Card style for company details and right-side sections */
+.left-side .card, .right-side .card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.left-side .card:hover, .right-side .card:hover {
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25); /* Enhanced shadow on hover */
+    transform: translateY(-5px);
+}
+
+/* Headings */
+.left-side h1, .right-side h2 {
+    font-size: 28px;
+    color: #0056b3; /* Darker blue for headings */
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #0056b3; /* Darker blue for border */
+    padding-bottom: 10px;
+}
+
+/* Sub-headings and text styles */
+.left-side h3 {
+    font-size: 20px;
+    color: #ffffff; /* Even darker blue for sub-headings */
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.left-side p, .right-side p {
+    font-size: 16px;
+    color: #444; /* Darker text for better readability */
+    line-height: 1.6;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon styling */
+.left-side i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #0056b3; /* Darker blue for icons */
+}
+
+/* Button styling */
+.left-side button {
+    background-color: #0056b3; /* Darker blue */
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0px 4px 10px rgba(0, 86, 179, 0.2); /* Adjusted shadow */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left-side button:hover {
+    background-color: #003d7a; /* Darker blue on hover */
+    box-shadow: 0px 6px 15px rgba(0, 86, 179, 0.3);
+}
+
+/* Text area styling */
+.left-side textarea, .right-side textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc; /* Light border for text areas */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    resize: none;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Right-side sections spacing */
+.right-side .card {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.right-side h2 {
+    font-size: 22px;
+    color: #003d7a; /* Darker blue for right-side headings */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #0056b3; /* Darker blue for border */
+    padding-bottom: 8px;
+}
+
+.right-side .card p {
+    font-size: 15px;
+    color: #666;
+}
+
+.right-side textarea {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+/* Add extra spacing for better content clarity */
+.company-profile-container {
+    margin-top: 20px;
+}
+
+/* Hero Area Styling */
+.Hero_area {
+    margin-top: 70px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 40px;
+    border-radius: 12px;
+    background-color: #0c4e94; /* Dark blue background */
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    gap: 40px; /* Spacing between image and text */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Subtle box-shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+/* On Hover Effect */
+.Hero_area:hover {
+    transform: scale(1.02); /* Slight scaling effect */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25); /* Increased shadow on hover */
+}
+
+/* Image Styling */
+.Hero_area img {
+    width: 150px; /* Set a uniform size for the profile image */
+    height: 150px;
+    border-radius: 50%; /* Circular profile image */
+    border: 4px solid #ffffff; /* White border around image */
+}
+
+/* Hero Details Section */
+.H_details {
+    display: flex;
+    flex-direction: row; /* Stack text vertically */
+    justify-content: center;
+    gap: 50px; /* Space between text items */
+    text-transform: uppercase; /* Uppercase text */
+    color: #ffffff; /* White text color for contrast */
+}
+
+/* Styling for Hero Section Headings */
+.H_details h2 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+    letter-spacing: 1px; /* Adds some spacing between letters */
+}
+
+.H_details hr {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+/* Accordion Styles */
+.accordion {
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.accordion-header {
+    background-color: #0056b3; /* Darker blue for accordion header */
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease; /* Added transition for transform */
+}
+
+.accordion-header:hover {
+    background-color: #003d7a; /* Darker blue on hover */
+    transform: scale(1.02); /* Slight scaling effect on hover */
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none; /* Hidden by default */
+    border-top: 1px solid #ddd;
+}
+
+/* Show accordion content when active */
+.accordion.active .accordion-content {
+    display: block;
+}
+
+.accordion-body{
+    margin: 10px 5px;
+}
+
+.accordion-body p{
+    font-size: 22px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Hero_area {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center;
+    }
+
+    .Hero_area img {
+        margin-bottom: 20px; /* Adds space below image */
+    }
+
+    .company-profile-container {
+        flex-direction: column; /* Stack the left and right sections vertically */
+        align-items: center; /* Center align on smaller screens */
+    }
+
+    .left-side, .right-side {
+        width: 100%; /* Full width on small screens */
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: animateModal 0.3s ease-out;
+}
+
+/* Close button inside modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animation for Modal */
+@keyframes animateModal {
+    from {
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Form Container Styling */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Form Label Styling */
+form label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Input Field Styling */
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+/* Focused Input Field */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #0056b3; /* Darker blue when focused */
+    outline: none;
+}
+
+/* Textarea Field Styling */
+form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+/* Select Dropdown Styling */
+form select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23333" d="M2 0L0 2h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    padding-right: 30px;
+}
+
+/* Button Styling */
+form button[type="submit"] {
+    background-color: #0056b3; /* Darker blue for button */
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+form button[type="submit"]:hover {
+    background-color: #003d7a; /* Darker blue on hover */
+}
+
+/* Form Spacing */
+form input[type="text"] + label,
+form input[type="email"] + label,
+form textarea + label,
+form select + label {
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form textarea,
+    form select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    form button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}

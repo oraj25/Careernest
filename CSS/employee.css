@@ -1,0 +1,319 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif; /* Use a friendly font */
+}
+
+body {
+    background: linear-gradient(to bottom right, #f0f5ff, #d1e0ff); /* Light blue gradient background */
+    min-height: 100vh; /* Full height for body */
+    padding-top: 5%;
+}
+
+/* Header Styles */
+header {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between; /* Space between the logo and navigation */
+    align-items: center; /* Center items vertically */
+    padding: 15px 20px; /* Padding for header */
+    background-color: #003964; /* Header background color */
+    color: rgb(255, 255, 255); /* Text color in header */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect for depth */
+    position: fixed; /* Fix header to the top */
+    width: 100%; /* Full width for header */
+    top: 0; /* Align to top */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Logo Styles */
+.logo img {
+    height: 50px; /* Logo height */
+    border: 2px solid white; /* White border around logo */
+}
+
+/* Navigation Styles */
+nav {
+    margin-left: 5px; /* Space between logo and nav */
+    margin-right: 140px;
+}
+
+nav ul {
+    display: flex; /* Horizontal navigation */
+    list-style: none; /* Remove bullet points */
+    align-items: center; /* Center items vertically */
+}
+
+nav ul li {
+    
+     margin: 0 20px; /* Space between nav items */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effect */
+    padding: 15px; /* Add padding for a better clickable area */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+nav ul li:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    background-color: rgba(162, 215, 247, 0.644); /* Darker background on hover */
+}
+
+nav ul li a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text for links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover {
+    color: #ffdd57; /* Change color on hover */
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    border-radius: 5px;
+    position: relative; /* Position relative for dropdown */
+}
+
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute position for dropdown */
+    background-color:rgba(162, 215, 247, 0.644); /* White background for dropdown */
+    top: 50px;
+	left: 0;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    min-width: 160px; /* Minimum width */
+    z-index: 1; /* Ensure it appears above other content */
+
+}
+
+.dropdown-content a {
+    color: #333; /* Link color in dropdown */
+    padding: 12px 16px; /* Padding for dropdown items */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display for full width */
+    font-weight: normal; /* Normal weight for dropdown links */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #4A90E2; /* Background color on hover */
+    color: #ffdd57; /* Change text color on hover */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Profile styles */
+.profile img {
+    height: 40px; /* Profile image height */
+    border-radius: 50%; /* Circular profile image */
+    border: 2px solid white; /* White border around profile image */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effects */
+}
+
+.profile:hover {
+    transform: scale(1.3); /* Zoom effect on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+/* Main Section */
+.intro-section {
+    margin: 60px 0px;
+    padding: 160px 30px 80px; /* Padding for intro section */
+    display: flex; /* Flexbox for alignment */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 500px; /* Height for the intro section */
+    transition: transform 0.3s ease-in-out; /* Transition for scaling effect */
+}
+
+.intro-section:hover {
+    transform: scale(1.0); /* Scale effect on hover */
+}
+
+.content-box {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between left and right content */
+    align-items: center; /* Center content vertically */
+    width: 100%; /* Full width for content box */
+    max-width: 1900px; /* Maximum width */
+    background:  #003964f1; /*  background */
+    padding: 40px; /* Padding for content box */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effects */
+}
+
+.content-box:hover {
+    transform: scale(1.02); /* Zoom effect on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+}
+
+/* Left Content Styles */
+.left-content {
+    width: 60%; /* Width for left content */
+}
+
+.left-content h1 {
+    font-size: 4.2rem; /* Larger title size */
+    font-weight: bolder;
+    color: #ffffff; /* Title color */
+    margin-bottom: 15px; /* Space below title */
+}
+
+.left-content p {
+    font-size: 1.2rem; /* Larger paragraph text */
+    color: #fffbfb; /* Paragraph color */
+    margin-bottom: 25px; /* Space below paragraph */
+}
+
+/* Search Bar Styles */
+.search-bar input {
+    width: 100%; /* Full width for input */
+    padding: 20px; /* Padding for input */
+    border-radius: 30px; /* Rounder corners */
+    border: 2px solid #ccc; /* Border color */
+    font-size: 18px; /* Larger font size */
+    transition: all 0.3s ease; /* Transition for all properties */
+}
+
+.search-bar input:hover,
+.search-bar input:focus {
+    border: 2px solid #4A90E2; /* Change border color on hover/focus */
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.3); /* Shadow on hover/focus */
+    transform: scale(1.05); /* Slight scaling on hover/focus */
+}
+
+/* Right Content Styles */
+.right-content img {
+    height: 400px; /* Image height */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effects */
+}
+
+.right-content img:hover {
+    transform: rotate(5deg) scale(1.1); /* Rotation and scaling on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Shadow on hover */
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to top, #000,  #003964); /* Gradient for footer */
+    color: white; /* Text color in footer */
+    padding: 40px; /* Padding for footer */
+    text-align: center; /* Center text in footer */
+    margin-top: 50px; /* Space above footer */
+    position: relative; /* Relative position for elements inside */
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    font-size: 16px; /* Font size in footer */
+}
+
+
+
+/* Footer link styles */
+footer a {
+    color: white; /* Link color */
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+footer a:hover {
+    color: #ffdd57; /* Change color on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Footer Links Layout */
+.footer-links {
+    margin-top: 15px; /* Space above links */
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center links */
+    gap: 25px;
+}
+/*full background gradient*/
+body {
+    background: linear-gradient(-45deg, #a8e6ff, #d0f1ff, #ffffff, #a8d1ff);
+    background-size: 800% 800%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+/*#a8e6ff � Light blue
+#d0f1ff � Even lighter blue
+#ffffff � White
+#a8d1ff � Slightly deeper light blue .*/
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.admin {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.2); /* Blue shadow */
+}
+
+.admin-header h2 {
+    text-align: center;
+    color: #01579b; /* Darker blue */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #0288d1; /* Medium blue */
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #ffffff;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #0277bd; /* Darker blue on focus */
+    box-shadow: 0 0 5px rgba(0, 117, 189, 0.5); /* Blue glow */
+}
+
+.btn {
+    padding: 10px;
+    background-color: #0288d1; /* Medium blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0277bd; /* Darker blue on hover */
+}
+
+.btn:active {
+    background-color: #01579b; /* Even darker blue on click */
+}
+
+a.btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}

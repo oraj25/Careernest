@@ -1,0 +1,12 @@
+/* Custom Alert Styling */
+.custom-alert {
+    background-color: #ffecb5; /* Light yellow background */
+    border-color: #ffeeba;     /* Border color*/
+    color: #856404;            /* Text color for contrast */
+    border-radius:2px;   /* Border radius for softer corners */
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+    text-align:Center;
+	padding: 0 30px 30px;
+}
+

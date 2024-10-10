@@ -1,0 +1,210 @@
+/* CSS/user_crud.css */
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    height: 100vh;
+    position: fixed;
+    width: 220px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Main content styles */
+.main-content {
+    margin-left: 240px; /* To accommodate the sidebar */
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Card styles */
+.card {
+    margin-top: 24px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+/* Table title styles */
+.table-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: left; /* Align to the left */
+}
+
+/* Button styles */
+.add-user-btn {
+    display: inline-block;
+    background-color: #28a745; /* Green background */
+    color: white;
+    padding: 12px 25px; /* Increased padding for larger button size */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* No underline */
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.add-user-btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+/* User Details styles */
+.user-details {
+    display: inline-block;
+    margin-left: 15px; /* Space between button and text */
+    font-size: 16px;
+    color: #007bff; /* Color for User Details */
+    text-decoration: none; /* No underline */
+    transition: color 0.3s;
+}
+
+.user-details:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+/* Button group styles */
+.btn-group {
+    display: flex; /* Align buttons horizontally */
+    justify-content: flex-end; /* Align buttons to the right */
+    margin-bottom: 20px; /* Space below the button group */
+}
+
+.btn {
+    padding: 12px 20px; /* Increased padding for larger buttons */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px; /* Space between buttons */
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none; /* No underline */
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    color: rgb(255, 255, 255);
+}
+
+.btn-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.table th {
+    background-color: #c0c1f3;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    border-top: 2px solid #007bff; /* Add a top border */
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+/* Footer link styles */
+footer a {
+    color: #007bff;
+    text-decoration: none; /* No underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.my_H4{
+    font-size: 24px;
+    text-transform: uppercase;
+}

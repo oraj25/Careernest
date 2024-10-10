@@ -1,0 +1,91 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif; /* Use the same font as your website */
+}
+
+/* Form Container */
+.form-container {
+    max-width: 800px; /* Increased width for the form */
+    margin: 20px auto; /* Center the form horizontally */
+    padding: 30px; /* Increased padding for a spacious feel */
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+}
+
+/* Heading Style */
+h1 {
+    text-align: center; /* Center the heading */
+    color: #4A90E2; /* Primary color for headings */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Basic styling for form groups */
+.form-group {
+    margin-bottom: 20px; /* Space between form groups */
+}
+
+/* Label styling */
+label {
+    display: block; /* Make labels block elements */
+    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+/* Input field and Textarea styles */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Full width of the container */
+    padding: 12px; /* Padding inside the input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease; /* Smooth transition for focus effect */
+}
+
+/* Focus effect for inputs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4A90E2; /* Change border color on focus */
+}
+
+/* Radio button styling */
+input[type="radio"] {
+    margin-right: 5px; /* Space between radio button and label */
+}
+
+/* Button styles */
+input[type="submit"],
+button {
+    background-color: #4A90E2; /* Primary button color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded edges */
+    padding: 12px 20px; /* Padding inside the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+}
+
+/* Change button color on hover */
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+    /* Adjust form container for smaller screens */
+    .form-container {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    input[type="submit"],
+    button {
+        width: 100%; /* Full width buttons on small screens */
+    }
+}
