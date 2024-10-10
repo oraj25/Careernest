@@ -1,0 +1,262 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #4A90E2;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 30px; /* Increased spacing between nav items */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em; /* Slightly larger text */
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FFC107;
+}
+
+/* Main Content Styles */
+.intro-section {
+    background-color: #bee0f3;
+    padding: 80px 0; /* Increased padding for more breathing room */
+    text-align: center;
+}
+
+.intro-section h1 {
+    font-size: 2.8em;
+    margin-bottom: 30px; /* Increased bottom margin */
+}
+
+.search-bar {
+    max-width: 600px; /* Wider search bar */
+    margin: 30px auto;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 15px; /* Increased padding for input field */
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles */
+.section {
+    margin: 80px 0; /* Increased margin between sections */
+    padding: 50px; /* More padding inside sections */
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px; /* Increased margin for titles */
+    color: #4A90E2;
+    font-size: 2.2em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Larger column min-size */
+    gap: 30px; /* Increased grid gap */
+}
+
+.grid-item {
+    background-color: #f0f8ff;
+    padding: 30px; /* Larger padding for grid items */
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Trending Jobs Styles */
+.trending-jobs {
+    padding: 40px; /* Increased padding for the jobs section */
+    background-color: #f5f5f5;
+    margin-top: 60px; /* Space before trending jobs */
+}
+
+.trending-jobs h2 {
+    text-align: center;
+    font-size: 2.4em; /* Larger font size for titles */
+    color: #333;
+    margin-bottom: 30px; /* More space below the title */
+}
+
+.jobs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px; /* Increased spacing between job cards */
+}
+
+.job {
+    background-color: #fff;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px; /* Increased padding for job items */
+    width: 280px; /* Slightly wider job cards */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.job:hover {
+    transform: translateY(-10px);
+}
+
+.job i.icon {
+    font-size: 35px;
+    color: #4CAF50;
+    margin-bottom: 10px; /* Adjusted margin for better spacing */
+}
+
+.job-details h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin: 0;
+}
+
+.job-details p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Job Seekers Styles */
+.J-seekers {
+    padding: 40px; /* Increased padding for the seekers section */
+    background-color: #f5f5f5;
+    margin-top: 60px; /* Space before job seekers */
+}
+
+.job-seekers h2 {
+    text-align: center;
+    font-size: 2.4em; /* Larger font size for titles */
+    color: #333;
+    margin-bottom: 30px; /* More space below the title */
+}
+
+.job-seekers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 25px; /* Increased spacing between seeker cards */
+}
+
+.seeker {
+    background-color: #fff;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px; /* Increased padding for seeker items */
+    width: 280px; /* Slightly wider seeker cards */
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.seeker:hover {
+    transform: translateY(-10px);
+}
+
+.seeker-details h3 {
+    font-size: 1.3em;
+    color: #333;
+    margin: 0;
+}
+
+.seeker-details p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0; /* Increased padding for footer */
+    text-align: center;
+}
+
+.footer-content a {
+    color: #FFC107;
+    text-decoration: none;
+    margin: 0 15px; /* Increased spacing between footer links */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 20px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Smaller grid for mobile */
+    }
+
+    .section {
+        padding: 30px;
+        margin: 50px 0;
+    }
+
+    .jobs, .job-seekers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .job, .seeker {
+        width: 90%;
+    }
+}

@@ -1,0 +1,132 @@
+.left-content h2 {
+    color: white;
+    font-size: 50px;
+}
+
+/* Adjust for header overlap */
+main {
+    padding-top: 30px; /* Ensures no content is hidden under the header */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Flexbox layout for the news sections */
+.news-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Combined section for Top Story and Video */
+.combined-section {
+    flex: 2; /* Take more space */
+}
+
+/* Styling for Top Story and Video card */
+.top-video-card {
+    background-color: #e7f2f8; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Top News Card */
+.top-news-card {
+    background-color: #b5e0f8; /* White background */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.top-news-card h2 {
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+.top-story-content {
+    display: flex; /* Use flexbox to align the image and text */
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.top-story-image {
+    width: 250px; /* Set a smaller width for the image */
+    height: auto;
+    border-radius: 5px;
+}
+
+.top-story-text {
+    flex: 1; /* Take remaining space */
+}
+
+/* Video News Card */
+.video-news-card {
+    display: flex;
+    gap: 10px;
+    background-color: #b5e0f8; /* Slightly gray background */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Right column (Local News and Recent News) */
+.right-column {
+    flex: 1; /* Take less space */
+    min-width: 300px;
+}
+
+/* News Card Styling */
+.news-card {
+    background-color: #b5e0f8; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+
+}
+
+.news-card h2 {
+    color: darkblue;
+    margin-bottom: 15px;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Read More Links */
+.read-more {
+    text-decoration: none;
+    color: blue;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Load More Button */
+.more-news {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.topStory{
+    display: grid;
+}
+
+h4{
+    margin-bottom: 15px;
+}

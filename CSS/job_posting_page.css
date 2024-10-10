@@ -1,0 +1,104 @@
+
+.job-templates {
+    gap: 25px; /* Space between the grid items */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+.template {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between left and right content */
+    align-items: center; /* Center content vertically */
+    width: 100%; /* Full width for content box */
+    max-width: 1900px; /* Maximum width */
+    background: white; /* White background */
+    padding: 80px; /* Padding for content box */
+    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+    border-radius: 15px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effects */
+}
+
+.template:hover {
+    transform: translateY(-10px); /* Lift the card slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Larger shadow on hover */
+}
+
+.template img {
+    width: 100%; /* Full width for the image */
+    height: 180px; /* Fixed height for image */
+    object-fit: cover; /* Cover the image without distortion */
+    transition: transform 0.3s ease; /* Smooth image zoom on hover */
+}
+
+.template:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.template-text {
+    padding: 20px; /* Padding around the content */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Let text take up remaining space */
+    justify-content: space-between;
+}
+
+.template-text h2 {
+    font-size: 1.5rem; /* Slightly larger title */
+    color: #2c3e50; /* Darker title color */
+    margin-bottom: 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.template-text p {
+    font-size: 1.1rem; /* Regular size for paragraph */
+    color: #7f8c8d; /* Muted grey for body text */
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.template-text h2 a {
+    color: #3498db; /* Bright blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.template-text h2 a:hover {
+    color: #1abc9c; /* Switch to teal on hover */
+}
+
+/* CTA Button */
+.template-button {
+    background-color: #3498db; /* Vivid blue background */
+    color: white; /* White text */
+    padding: 12px 20px; /* Comfortable padding */
+    border: none;
+    border-radius: 8px; /* Rounded corners for the button */
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto; /* Push button to the bottom */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.template-button:hover {
+    background-color: #1abc9c; /* Switch to teal on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.template-left{
+    width: 55%;
+}
+
+.template-right{
+    width: 40%;
+}
+
+.template-middleright{
+    width: 55%;
+}
+
+.template-middleleft{
+    width: 40%;
+}

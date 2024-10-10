@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.Employer-popup {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    position: relative;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0056b3; /* Add a brand color */
+}
+
+hr {
+    border: 1px solid #0056b3; /* Color matching the brand */
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="radio"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.industry-options {
+    margin: 10px 0;
+}
+
+textarea {
+    height: 100px; /* Height for the company details */
+    resize: vertical; /* Allow vertical resize */
+}
+
+input[type="submit"],
+button {
+    background-color: #0056b3; /* Brand color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:disabled {
+    background-color: #ccc; /* Disable color */
+}
+
+input[type="submit"]:hover:not(:disabled),
+button:hover {
+    background-color: #004494; /* Darken on hover */
+}
+
+button {
+    background-color: #dc3545; /* Red for cancel */
+}
+
+button:hover {
+    background-color: #c82333; /* Darken on hover */
+}
+
+/* Checkbox styles */
+#Policycheckbox {
+    margin-top: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .Employer-popup {
+        width: 95%;
+    }
+}

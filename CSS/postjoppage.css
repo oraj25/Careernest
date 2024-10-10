@@ -1,0 +1,89 @@
+.job-templates {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Increased gap between templates */
+    padding: 30px; /* Added more padding */
+    background-color: #f9f9f9; /* Light gray background for the section */
+    border-radius: 12px; /* Slightly larger rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for the section */
+    margin: 0px 30px;
+}
+
+.template {
+    display: flex;
+    justify-content: space-between; /* Aligns content to the left and pushes link to the right */
+    background-image: url('../images/1.jpg'); /* Background for templates */
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 12px; /* Rounded corners */
+    height: 245px; /* Fixed height for templates */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for individual templates */
+}
+
+.template-content {
+    flex: 1; /* Allow this div to take the remaining space */
+    margin-right: 20px; /* Space between text and link */
+}
+
+.template h2 {
+    text-align: center; /* Center the text inside the link */
+    font-size: 1.8rem; /* Larger header size */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove padding */
+    color: #ffffff; /* White text color */
+    font-weight: 700; /* Bolder font weight */
+    background-color: #365bd4; /* Background color for link */
+    border-radius: 12px; /* Rounded corners for link */
+    width: 300px; /* Fixed width for link */
+    height: 100%; /* Full height of the template */
+    display: flex; /* Use flex to center content vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-left: 20px; /* Add margin for space between content and link */
+    flex-shrink: 0; /* Prevent the link from shrinking */
+}
+
+.template h2:hover {
+    background-color: #1b368f;
+}
+
+.template p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    font-size: 18px; /* Standard paragraph size */
+    color: #17202a; /* Dark gray color for text */
+    line-height: 1.6; /* Increased line height for readability */
+	margin-left: 15px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-weight: 800;
+    border: 1px thick;
+    margin-top: 22px;
+    padding: 5px 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.template h1 {
+    text-align: left;
+    font-size: 30px; /* Standard paragraph size */
+    color: #ffffff; /* Dark gray color for text */
+    line-height: 1.6; /* Increased line height for readability */
+	margin-left: 15px;
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+/* Full link style */
+.template a {
+    display: block; /* Block-level for full area link */
+    padding: 90px; /* Button padding */
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for hover */
+    height: 100%; /* Full height of the template */
+    box-shadow: none; /* No shadow for links */
+	text-transform: uppercase;
+}

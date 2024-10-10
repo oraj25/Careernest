@@ -1,0 +1,276 @@
+
+.container {
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+    margin-right: auto;
+    margin-left: auto;
+    height: 112vh; /* Full height of the viewport */
+    overflow: hidden; /* Hide overflow to prevent scrolling the container */
+}
+
+/* Margin utilities */
+.mt-4 {
+    margin-top: 1.5rem;
+}
+
+#tx{
+    text-decoration: none;
+}
+
+/*row */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -0.75rem;
+    margin-left: -0.75rem;
+    flex: 1; /* Allow row to fill available space */
+}
+
+.row h4{
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.action-buttons a, .action-buttons button{
+    font-size: 20px;
+}
+
+/*column */
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Card component */
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    flex: 1; /* Make card fill available space */
+     
+}
+
+/* Card header */
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    font-size: 20px;
+}
+
+/* Card body */
+.card-body {
+    flex: 1 1 auto; /* Allow body to grow */
+    padding: 0;
+    font-size: 15px;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling if necessary */
+    min-width: 100%; /* Set a minimum width */
+    max-height: calc(100vh - 200px); /* Adjust for card header and potential footer */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS */
+    width:calc(100vh - 600px);
+    overflow-x: scroll;
+    position: relative;
+}
+
+/* Action buttons */
+.action-buttons {
+    display: flex;         /* Use flexbox */
+    gap: 0.5rem;          /* Space between buttons */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Button styles for each button class */
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #0dcaf0;
+    border-color: #0dcaf0;
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #31d2f2;
+    border-color: #25cff2;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #157347;
+    border-color: #146c43;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+}
+
+.float-end {
+    float: right !important;
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    margin-bottom: 0;
+    color: #212529;
+    border-collapse: collapse;
+    min-width: 300px; /* Set a minimum width for the table */
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th, 
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Table header */
+.table thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    color: #fff;
+    vertical-align: bottom;
+    background-color: #f8f9fa;
+    text-align: left;
+}
+
+.table th {
+    padding: 1rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+    background-color: #c0c1f3;
+    position: sticky;
+    top: 0px;
+    background-color: #c0c1f3;;
+    color: #000000;
+}
+
+.table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Scrollbar styling */
+.card-body::-webkit-scrollbar {
+    width: 10px; /* Width of the vertical scrollbar */
+}
+
+.card-body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+}
+
+.card-body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Background of the scrollbar track */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .table {
+        width: 100%;
+        display: block; /* Allow horizontal scrolling */
+    }
+    .table thead {
+        display: none; /* Hide the header on small screens */
+    }
+    .table tbody tr {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        border-bottom: 1px solid #dee2e6; /* Add bottom border */
+    }
+    .table tbody tr td {
+        display: flex;
+        justify-content: space-between; /* Space between items */
+        padding: 0.75rem; /* Padding for smaller screens */
+        border-bottom: 1px solid #dee2e6; /* Border for separation */
+    }
+    
+}
+
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    border-top: 2px solid #007bff; /* Add a top border */
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+}
+
+/* Footer link styles */
+footer a {
+    color: #007bff;
+    text-decoration: none; /* No underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

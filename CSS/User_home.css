@@ -1,0 +1,478 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif; /* Consistent font */
+}
+
+body {
+    background: linear-gradient(-45deg, #a8e6ff, #d0f1ff, #ffffff, #a8d1ff); /* Matching background gradient */
+    background-size: 800% 800%;
+    animation: gradient 15s ease infinite;
+    min-height: 100vh;
+    padding: 0; /* Prevent any extra padding on body */
+}
+
+/* Main Intro Section */
+.intro-section {
+    margin: 60px 0; /* Ensure consistent margin top and bottom */
+    padding: 100px 30px; /* Ensure padding is applied uniformly */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px; /* Enforce minimum height */
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensure it handles padding correctly */
+}
+
+.intro-section:hover {
+    transform: scale(1.0);
+}
+
+.content-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1900px;
+    background: #003964f1; /* Consistent with header color */
+    padding: 40px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Similar shadow effect */
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden; /* Ensure content stays inside the box */
+}
+
+.content-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Left Content Styles */
+.left-content {
+    width: 60%;
+    padding-right: 20px; /* Add space between left and right content */
+    box-sizing: border-box; /* Ensure padding is handled properly */
+}
+
+.left-content h1 {
+    font-size: 4.2rem;
+    font-weight: bolder;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.left-content p {
+    font-size: 1.2rem;
+    color: #fffbfb;
+    margin-bottom: 25px;
+}
+
+.search-bar {
+    margin-top: 20px; /* Space above the search bar */
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Right Content Styles */
+.right-content img {
+    height: 400px;
+    max-width: 100%; /* Ensure image is responsive */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.right-content img:hover {
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Features Section Styles */
+.features {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between feature cards */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    margin: 40px 200px; /* Margin around features section */
+}
+
+.feature-card-wrapper {
+    width: 250px; /* Fixed width for feature cards */
+    margin: 15px; /* Space between feature cards */
+    position: relative; /* Positioning for overlay effects */
+    overflow: hidden; /* Hide overflow for smooth effects */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    background-color: #fff; /* White background for contrast */
+}
+
+.feature-card {
+    display: block; /* Block display for entire card */
+    text-align: center; /* Center text */
+    color: #333; /* Dark text color for readability */
+    text-decoration: none; /* No underline */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+    padding: 20px; /* Padding inside the card */
+}
+
+.feature-card img {
+    width: 80%; /* Slightly smaller width for a modern look */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space between image and text */
+    transition: transform 0.3s ease; /* Smooth scale on hover */
+}
+
+.feature-card-content {
+    font-size: 16px; /* Slightly larger font size */
+    font-weight: bold; /* Bold font for emphasis */
+    color: #197ae1; /* Bright color for text */
+    margin-top: 10px; /* Space above the content */
+}
+
+/* Hover Effects */
+.feature-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Larger shadow on hover */
+    background-color: #f0f8ff; /* Light background on hover */
+}
+
+.feature-card:hover img {
+    transform: scale(1.1); /* Scale effect on hover */
+}
+
+
+.Cbackground-image {
+    width: 100%; /* Ensure background image covers the card */
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgb(0, 0, 0); /* Ensure text is visible */
+    font-size: 1.5rem;
+}
+
+/* Trending Jobs Section */
+.trending-jobs {
+    padding: 60px;
+    text-align: center;
+    background-color: rgba(0, 57, 100, 0.1); /* Light background color */
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+.trending-jobs h2 {
+    color: #003964;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.jobs {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.job {
+    display: flex;
+    flex-direction: column; /* Stack job details */
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    margin: 15px auto; /* Center job items */
+}
+
+.job:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.job a {
+    color: #003964;
+    text-decoration: none;
+    margin-top: 10px; /* Space above the link */
+}
+
+/* Job Seekers Section */
+.J-seekers {
+    padding: 60px;
+    text-align: center;
+}
+
+.J-seekers h2 {
+    color: #003964;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.job-seekers {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+}
+
+.seeker {
+    display: flex;
+    flex-direction: column; /* Stack seeker details */
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    margin: 15px auto; /* Centering */
+}
+
+.seeker:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.seeker a {
+    color: #003964;
+    text-decoration: none;
+    margin-top: 10px; /* Space above the link */
+}
+
+/* Top Categories Section */
+.top-categories {
+    padding: 60px;
+    text-align: center;
+    background-color: rgba(0, 57, 100, 0.1);
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+.top-categories h2 {
+    color: #003964;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.top-categories div, .top-advertisers div{
+    font-size: 20px;
+}
+.categories {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensure responsiveness */
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    margin: 15px auto; /* Centering */
+}
+
+.category:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Top Advertisers Section */
+.top-advertisers {
+    padding: 60px;
+    text-align: center;
+}
+
+.top-advertisers h2 {
+    color: #003964;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.advertisers {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+}
+
+.advertiser {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 100%;
+    max-width: 350px;
+    margin: 15px auto; /* Centering */
+}
+
+.advertiser:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Questions and Sitemap Section */
+/* More Stylish Questions and Site Map Section Styles */
+.Q-M {
+    display: flex; 
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 30px;
+    gap: 30px; /* Space between boxes */
+}
+
+.QM-wrapper {
+    background: linear-gradient(135deg, #004d80, #0073e6); /* Darker gradient for depth */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    border-radius: 15px; /* Softer corners */
+    padding: 40px; /* More padding for spaciousness */
+    width: 45%; /* Adjusted width for better layout */
+    text-align: center;
+    color: white; /* Text color */
+    border: 2px solid rgba(255, 255, 255, 0.3); /* Light border */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative; /* For pseudo-element positioning */
+}
+
+.QM-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Overlay for depth */
+    border-radius: 15px; /* Match border radius */
+    transition: opacity 0.4s ease;
+    z-index: 0; /* Place behind content */
+}
+
+.QM-wrapper:hover::before {
+    opacity: 0; /* Fade out on hover */
+}
+
+.QM-wrapper:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.questions h3, .sitemap h3 {
+    font-size: 28px; /* Larger font for headers */
+    color: #ffdd57; /* Accent color for headers */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1px; /* Spacing between letters */
+    animation: fadeInDown 0.8s ease-out; /* Animation for headers */
+    z-index: 1; /* Ensure headers are above overlay */
+}
+
+.contact a, .qa a, .sitemap ul li a {
+    color: #ffdd57; /* Accent color for links */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px; /* Slightly larger font */
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative; /* For pseudo-elements */
+}
+
+.contact a:hover, .qa a:hover, .sitemap ul li a:hover {
+    color: #ffffff; /* Change to white on hover */
+    transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.contact a::after, .qa a::after, .sitemap ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #ffdd57; /* Underline color */
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0); /* Start with no underline */
+    transition: transform 0.3s ease; /* Animation for underline */
+}
+
+.contact a:hover::after, .qa a:hover::after, .sitemap ul li a:hover::after {
+    transform: scaleX(1); /* Show underline on hover */
+}
+
+.sitemap ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.sitemap ul li {
+    margin: 15px 0; /* Increased spacing */
+}
+
+.sitemap ul li a::before {
+    content: "🗂️ "; /* Icon before each link */
+    color: #ffdd57; /* Accent color for icons */
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Animation */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .intro-section {
+        flex-direction: column; /* Stack intro content vertically */
+        padding: 50px 20px; /* Adjust padding */
+    }
+
+    .left-content {
+        width: 100%; /* Full width for mobile */
+        padding-right: 0; /* Remove right padding */
+    }
+
+    .right-content {
+        width: 100%; /* Full width for mobile */
+        margin-top: 20px; /* Space below */
+    }
+
+    .features, .jobs, .job-seekers, .categories, .advertisers {
+        flex-direction: column; /* Stack feature cards and job items */
+        align-items: center; /* Center align */
+    }
+
+    .feature-card-wrapper {
+        margin: 10px 0; /* Space between feature cards */
+    }
+}

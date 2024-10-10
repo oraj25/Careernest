@@ -1,0 +1,245 @@
+/* General styling for the job area */
+.jobs_area {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
+    color: #333;
+    line-height: 1.6;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Search form styling */
+.Search {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Dropdown and input styling */
+.filter_style select, .Search_bar {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+.filter_style select:hover, .Search_bar:hover {
+    border-color: #0056b3;
+}
+
+.filter_style select:focus, .Search_bar:focus {
+    outline: none;
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Search button styling */
+.Search_button {
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Search_button:hover {
+    background-color: #0056b3;
+}
+
+/* Grid layout for job listings */
+.job_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 5px;
+}
+
+/* Job card styling */
+.job_decoration {
+    padding: 20px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.job_decoration:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Pagination styling */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination-btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination-btn:hover {
+    background-color: #0056b3;
+}
+
+#pagination-numbers {
+    display: flex;
+    gap: 10px;
+}
+
+#pagination-numbers span {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#pagination-numbers span.active {
+    background-color: #0056b3;
+}
+
+#pagination-numbers span:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 768px) {
+    .job_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .job_grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Popup Styling */
+.popup-overlay {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
+    z-index: 1000;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.popup-content {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    width: 80%;
+    max-width: 600px; /* Max width for larger screens */
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3); /* Softer shadow for depth */
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+/* Close button styling */
+.close-popup {
+    position: absolute;
+    top: 10px; /* Adjusted position */
+    right: 10px; /* Adjusted position */
+    font-size: 24px;
+    color: white; /* Color to match the bar background */
+    background-color: #007BFF; /* Background color for the button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for the button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+    z-index: 1001; /* Ensure it is above the popup content */
+}
+
+.close-popup:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Image styling */
+.popup-content img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Slightly rounded image corners */
+}
+
+/* Title styling */
+#popup-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 15px 0; /* Added margin for spacing */
+}
+
+/* Job details styling */
+.LO_SA {
+    margin-bottom: 15px; /* Spacing between sections */
+}
+
+.LO_SA p {
+    margin: 5px 0; /* Spacing for paragraphs */
+}
+
+/* Description styling */
+#popup-description {
+    font-size: 16px;
+    line-height: 1.5; /* Better readability */
+    margin-bottom: 20px; /* Spacing before button area */
+}
+
+/* Button area styling */
+.buttonArea {
+    display: flex;
+    justify-content: space-between; /* Spread buttons apart */
+}
+
+.B1, .B2 {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.B1 {
+    background-color: #007BFF; /* Primary action button */
+    color: white;
+}
+
+.B2 {
+    background-color: #e63946; /* Secondary action button */
+    color: white;
+}
+
+.B1:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.B2:hover {
+    background-color: #d62839; /* Darker shade on hover */
+}

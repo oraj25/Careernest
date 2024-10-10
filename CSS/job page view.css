@@ -1,0 +1,167 @@
+.fullArea {
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+    max-width: 900px; /* Set a maximum width */
+    margin: 20px auto; /* Center the container */
+    border-radius: 10px;
+}
+
+.imageArea {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imageArea img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease-in-out;
+}
+
+.imageArea img:hover {
+    transform: scale(1.03);
+}
+
+.det {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.poDetails {
+    font-size: 14px;
+    color: #f1f1f1;
+    margin-top: 5px;
+}
+
+.infoArea {
+    width: 100%;
+    margin: 15px auto 0;
+}
+
+.LO_SA {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.LO_SA p {
+    border: 1px solid #ccc;
+    font-size: 12px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9f9;
+    color: #2c3e50;
+    text-transform: uppercase;
+    flex: 1;
+    text-align: center;
+}
+
+.jobDescription {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    text-align: justify;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.buttonArea {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.buttonArea input {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.2s;
+}
+
+.B1 {
+    background-color: #28b463;
+    color: white;
+    text-transform: uppercase;
+}
+
+.B1:hover {
+    background-color: #239b56;
+    transform: scale(1.05);
+}
+
+.B2 {
+    background-color: #f1c40f;
+    color: white;
+    text-transform: uppercase;
+}
+
+.B2:hover {
+    background-color: #d4ac0d;
+    transform: scale(1.05);
+}
+
+.backButton {
+    position: absolute;
+    top: 20px; /* Adjusts the vertical position */
+    right: 20px; /* Adjusts the horizontal position */
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.backButton:hover {
+    background-color: #2980b9;
+    transform: scale(1.05); /* Adds a slight hover effect */
+}
+
+
+@media (max-width: 768px) {
+    .fullArea {
+        padding: 10px;
+    }
+
+    .imageArea img {
+        width: 100%;
+    }
+
+    .LO_SA {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .LO_SA p {
+        width: 100%;
+    }
+
+    .buttonArea {
+        justify-content: center;
+        flex-direction: column;
+    }
+}

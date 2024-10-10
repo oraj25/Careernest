@@ -1,0 +1,43 @@
+/* Styles for the alert message */
+.alert {
+    position: relative; /* Ensure positioning for the close button */
+    margin: 20px 0; /* Space around the alert */
+    padding: 15px 20px; /* Padding inside the alert */
+    border-radius: 8px; /* Rounded corners for the alert */
+    background-color: #d4edda; /* Light green background for success messages */
+    color: #155724; /* Dark green text for visibility */
+    border: 1px solid #c3e6cb; /* Slightly darker border */
+    font-size: 16px; /* Font size for the alert text */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    transition: opacity 0.5s ease; /* Smooth fade-out transition */
+}
+
+/* Close button styling */
+.alert .btn-close {
+    position: absolute; /* Position the close button */
+    top: 10px; /* Align at the top */
+    right: 10px; /* Align at the right */
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    color: #155724; /* Match the close button color to alert text */
+    font-size: 20px; /* Size of the close button */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Change close button color on hover */
+.alert .btn-close:hover {
+    color: #0b5ed7; /* Change color on hover for interactivity */
+}
+
+/* Fade out effect when dismissing the alert */
+.alert.fade {
+    opacity: 1; /* Default opacity */
+}
+
+.alert.fade.show {
+    opacity: 1; /* Visible */
+}
+
+.alert.fade.hide {
+    opacity: 0; /* Hidden */
+}

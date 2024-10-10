@@ -1,0 +1,56 @@
+.job_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.job_card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.job_card:hover {
+    transform: scale(1.02);
+}
+
+.job_card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.job_card .buttonArea {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttonArea input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.B1 {
+    background-color: #28b463;
+    color: white;
+}
+
+.B1:hover {
+    background-color: #239b56;
+}
+
+.B2 {
+    background-color: #007bff;
+    color: white;
+}
+
+.B2:hover {
+    background-color: #0056b3;
+}

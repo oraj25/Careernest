@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.411); /* Semi-transparent background */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+}
+
+h1 {
+    color: #333;
+    font-size: 86px; /* Increase font size */
+}
+
+p {
+    background: rgba(255, 255, 255, 0.9); /* White with transparency */
+    padding: 30px; /* Increased padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+    color: #555;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 20px; /* Increase font size */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Increase link font size */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for clarity */
+}

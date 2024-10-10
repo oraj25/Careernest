@@ -1,0 +1,38 @@
+/* Dropdown Menu Styles */
+.dropdown-profile {
+    border-radius: 5px;
+    position: relative; /* Position relative for dropdown */
+}
+
+.dropdown-content-profile {
+    display: none; /* Hidden by default */
+    position: absolute; /* Absolute position for dropdown */
+    background-color: rgba(162, 215, 247, 0.644); /* Original semi-transparent background */
+    top: 50px; /* Dropdown appears below the image, with a smaller gap */
+    right: 0px; /* Aligned to the right edge of the image */
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Shadow for dropdown */
+    min-width: 160px; /* Minimum width */
+    z-index: 1; /* Ensure it appears above other content */
+    padding: 8px 0; /* Padding around the links */
+}
+
+.dropdown-content-profile a {
+    color: #333; /* Original link color */
+    padding: 12px 16px; /* Original padding for dropdown items */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display for full width */
+    font-weight: normal; /* Normal weight for dropdown links */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+    border-radius: 10px; /* Original border radius for dropdown links */
+}
+
+.dropdown-content-profile a:hover {
+    background-color: #4A90E2; /* Original hover background color */
+    color: #ffdd57; /* Original hover text color */
+}
+
+/* Show dropdown on hover */
+.dropdown-profile:hover .dropdown-content-profile {
+    display: block; /* Show dropdown on hover */
+}

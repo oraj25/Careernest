@@ -1,0 +1,125 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Section Styling */
+.left-section {
+    flex: 1;
+    background: url('../images/telework.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+    .left-section h1 {
+        font-size: 80px;
+        font-weight: bold;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+/* Right Section Styling */
+.right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f3f4f6;
+}
+
+.form {
+    background: #ffffff;
+    padding: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 350px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    color: #555;
+}
+
+.area {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+    .area:focus {
+        border-color: #007BFF;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+    }
+
+.password-hints {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 5px;
+    color: #777;
+    font-size: 12px;
+}
+
+.box {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+    .button:hover {
+        background: #0056b3;
+    }
+
+    .center-links {
+        display: flex;
+        justify-content: center; /* This centers the links horizontally */
+        gap: 20px; /* Adds space between the links */
+        padding: 10px 0; /* Optional: adds some vertical padding */
+    }
+    
+    .center-links a {
+        text-decoration: none; /* Removes underline */
+        font-size: 18px; /* Adjust the size of the text */
+        color: #333; /* Adjust the color as per your theme */
+        padding: 10px 15px; /* Adds padding around the links */
+        background-color: #f2f2f2; /* Optional: adds a background color */
+        border-radius: 5px; /* Optional: adds rounded corners */
+        transition: background-color 0.3s ease; /* Optional: adds hover effect transition */
+    }
+    
+    .center-links a:hover {
+        background-color: #ddd; /* Optional: changes background color on hover */
+    }
+    

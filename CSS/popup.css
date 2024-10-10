@@ -1,0 +1,188 @@
+/*create a profile popup */
+.p-popup{
+	width:400px;
+	Background:#fff;
+	border-radius:6px;
+	position: absolute;
+	top:0;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.1);
+	text-align:Center;
+	padding: 0 30px 30px;
+	color:#333;
+	border: 2px solid #4A90E2;
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+	z-index: 3;
+}
+
+
+.Employer-popup{
+	width:1300px;
+  	height: 2000px;
+	Background:#fff;
+	border-radius:6px;
+	position: absolute;
+	top:0;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0.1);
+	
+	padding: 0 30px 30px;
+	color:#333;
+	border: 2px solid #4A90E2;
+	visibility: hidden;
+	transition: transform 0.4s, top 0.4s;
+	z-index: 3;
+}
+
+.Employer-popup h2{
+	text-align:center;
+}
+.openForm-popup{
+  display: block;
+	visibility: visible;
+	top:130%;
+	transform: translate(-50%, -50%) scale(1);
+}
+.open-popup{
+  	display: block;
+	visibility: visible;
+	top:80%;
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.p-popup h2{
+	font-size: 38px;
+	font-weight: 500;
+	margin: 30px 0 10px;
+}
+
+.popup-btn{
+	width: 100%;
+	padding:10px 0px;
+	Background:#fff;
+	border:0;
+	outline: none;
+	cursor:pointer;
+	font-size:22px;
+	border-radius:4px;
+	margin-top: 50px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Form Styles */
+.Employer-popup .job-posting-form {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack the inputs vertically */
+}
+
+.Employer-popup h2{
+	background-color: #79717157;
+	border-radius: 3px;
+}
+/* Label Styles */
+.Employer-popup label {
+    font-weight: bold; /* Bold labels */
+    margin-bottom: 5px; /* Space below labels */
+    color:#333 ; /* Gray color for the labels */
+}
+
+/* Input and Select Styles */
+.Employer-popup input[type="text"],
+.Employer-popup input[type="email"],
+.Employer-popup textarea {
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    font-size: 14px; /* Font size */
+}
+
+/* Textarea Specific Styles */
+.Employer-popup textarea {
+    height: 100px; /* Fixed height for the textarea */
+}
+
+/* Button Styles */
+.Employer-popup input[type="submit"],
+.Employer-popup button {
+    background-color: #007BFF; /*primary color */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font size */
+}
+
+/* Button Hover Effect */
+.Employer-popup input[type="submit"]:hover,
+.Employer-popup button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Disabled Button Styles */
+.Employer-popup input[type="submit"]:disabled {
+    background-color: #ccc; /* Gray background for disabled */
+    cursor: not-allowed; /* Not-allowed cursor */
+}
+
+/* Radio Button Styles */
+.Employer-popup input[type="radio"] {
+    margin: 0 5px; /* Spacing around radio buttons */
+}
+
+/* Checkbox Styles */
+.Employer-popup #Policycheckbox {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+/* Additional Styles for Layout Adjustments */
+.Employer-popup button#Cancel {
+    background-color: #dc3545; /* Red color for cancel button */
+    margin-top: 10px; /* Space above the cancel button */
+}
+
+/* Cancel Button Hover Effect */
+.Employer-popup button#Cancel:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+
+#jobCategories {
+	
+    display:list-item;
+    flex-wrap:wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 1300px;
+	max-height: 120px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+	overflow-y: auto;
+}
+
+
+#jobCategories input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #3498db; /* Changes the color of the checkbox when selected */
+}
+
+#jobCategories label {
+    font-size: 16px;
+    color: #333;
+}
+
+#jobCategories label:hover {
+    color: #3498db; /* Hover effect */
+}
+
+#jobCategories div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    width: 200px;
+}
